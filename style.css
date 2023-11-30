@@ -346,6 +346,112 @@ tbody tr:hover {
   margin-right: 10px;
   margin-left: 10px;
 }
+/* ////////////////////////////////////////Media///////////////////////////////////////// */
+@media screen and (min-width: 1200px) {
+  .linkDetailsTik {
+    padding: 5px 8px;
+    overflow: hidden;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .linkDetailsTik {
+    padding: 5px 8px;
+    overflow: hidden;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .linkDetailsTik {
+    padding: 5px 8px;
+    overflow: hidden;
+    font-size: 12px;
+  }
+  .chart {
+    width: 100%;
+    margin: auto;
+  }
+  .test55 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 760px) {
+  .linkDetailsTik {
+    padding: 5px 8px;
+    overflow: hidden;
+    font-size: 12px;
+  }
+  .chart {
+    width: 100%;
+    margin: auto;
+  }
+  .test55 {
+    flex-direction: column;
+  }
+  .third-sec{
+    display: block;
+  }
+  .left-third-sec{
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .chart {
+    width: 100%;
+    margin: auto;
+  }
+  .test55 {
+    flex-direction: column;
+  }
+  .ticket-card {
+    width: 250px;
+    height: 200px;
+    margin-bottom: 30px;
+  }
+  .cardDetailsTop {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 10px;
+  }
+  .linkDetailsTik {
+    padding: 5px 8px;
+    overflow: hidden;
+    font-size: 10px;
+  }
+  .share-pos {
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+  .sale {
+    font-size: 12px;
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+  }
+  .qr-img {
+    width: 60px;
+    margin-top: 10px;
+  }
+  .search-body {
+    width: 50px !important;
+    height: 36px;
+    margin-right: 5px;
+  }
+  .options-data-btn {
+    width: 36px;
+    height: 36px;
+    margin-left: 3px;
+    margin-right: 3px;
+    display: block;
+  }
+  .third-sec{
+    display: block;
+  }
+  .left-third-sec{
+    margin-bottom: 10px;
+  }
+}
 @media screen and (max-width: 400px) {
   .chart {
     width: 100%;
