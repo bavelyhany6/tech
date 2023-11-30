@@ -8,40 +8,52 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
             integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="style.css">
         <title>Document</title>
     </head>
     <body>
 <!-- ///////////////////////////////////////first section/////////////////////////////// -->
-        <div class=" w-90">
+        <section class=" w-90 mt-5">
             <div class="d-flex justify-between align-center">
                 <div class=" d-flex align-center">
-                    <button class="back-btn "><i class="fa-solid
+                    <button class="back-btn ms-2"><i class="fa-solid
                             fa-arrow-right"></i></button>
                     <h3>تذكرة رقم #2342</h3>
                 </div>
                 <div>
-                    <button class=" edit-btn d-flex align-center "><img src="images/edit.svg" class="edit-img" alt="edit btn">تعديل</button>
+                    <button class=" edit-btn d-flex align-center "><img src="images/edit.svg" class="edit-img" alt="edit btn" data-bs-toggle="tooltip" data-bs-placement="bottom" title="تعديل" >تعديل</button>
                 </div>
             </div>
-        </div>
+        </section>
 
 <!-- ///////////////////////////////////////second section/////////////////////////////// -->
-        <div class="w-90 d-flex align-center justify-between test55">
+        <section class="w-90 d-flex align-center justify-between test55">
             
             <div id="chart" class="chart w-65"> <div class="list-chart11">
-                <select id="people" name="people" class="list-chart11">
-                    <option value="date">05 يوليو , 2023 - 05 أغسطس , 2023</option>
-                    <option value="date">05 يوليو , 2023 -06 أغسطس , 2023</option>
-                    <option value="date">05 يوليو , 2023 - 07 أغسطس , 2023</option>
-                    <option value="date">05 يوليو , 2023 - 08 أغسطس , 2023</option>
+               <div class=" d-flex justify-content-between">
+                <div>
+                    <select id="people" name="people" class="list-chart11 ms-5">
+                        <option value="date">05 يوليو , 2023 - 05 أغسطس , 2023</option>
+                        <option value="date">05 يوليو , 2023 -06 أغسطس , 2023</option>
+                        <option value="date">05 يوليو , 2023 - 07 أغسطس , 2023</option>
+                        <option value="date">05 يوليو , 2023 - 08 أغسطس , 2023</option>
+                      </select>
+                </div>
+               <div>
+                <select id="years" name="years" class="list-chart11 w-100 me-5">
+                    <option value="date">سنويا</option>
+                    <option value="date">سنويا</option>
+                    <option value="date">سنويا</option>
+                    <option value="date">سنويا</option>
                   </select>
+               </div>
+               </div>
             </div></div>
             <div class="bg-main ticket-card background-img ">
-                <p class="cardDetailsTop">عرض التذكرة الخاصة بالفيلم<i
-                        class="fa-regular fa-trash-can delete-icon"></i></p>
-                <p class=" linkDetailsTik">www.tazkty.com/473847<i
-                        class="fa-regular fa-copy fa-flip-horizontal copy-icon"></i></p>
+                <p class="cardDetailsTop d-flex justify-content-end ms-5">عرض التذكرة الخاصة بالفيلم<img src="images/trash.svg" alt="trash" class="trash mx-3" data-bs-toggle="tooltip" data-bs-placement="bottom" title="حذف"></p>
+                <p class=" linkDetailsTik">www.tazkty.com/473847 <img src="images/copy.svg" alt="copy"></p>
                 <p class="cardDetailsTop test">فعال حتي 15 يوليو 2023</p>
                 <div class="d-flex justify-between align-center middle">
                     <div class="ticket-circles right-circle"></div>
@@ -57,38 +69,38 @@
                     <div><img src="images/qr_img 1.svg" class="qr-img" alt="Qr code"></div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- ///////////////////////////////////////third section/////////////////////////////// -->
-        <div class="w-90 d-flex align-center justify-between third-sec">
+        <section class="w-90 d-flex align-center justify-between third-sec my-4">
             <div class=" d-flex align-center">
-                <h4>مبيعات التذاكر</h4>
+                <h4 class="sales-font">مبيعات التذاكر</h4>
                 <div class="bg-white search-body d-flex">
                     <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                    <input type="search" name="search" id="search"
-                        placeholder="بحث عن ..." class="search-input">
+                    <input type="search" name="search" id="search"  
+                        placeholder="بحث عن ..." class="search-input rounded-3">
                 </div>
                 <hr>
                 <div class=" d-flex">
-                    <button class="options-data-btn "><i class="fa-solid fa-sliders"></i></button>
-                <button class="options-data-btn "><i class="fa-solid
+                    <button class="options-data-btn d-block "><i class="fa-solid fa-sliders"></i></button>
+                <button class="options-data-btn d-block"><i class="fa-solid
                         fa-right-left fa-rotate-90"></i></button>
                 </div>
             </div>
-            <div class=" d-flex align-center left-third-sec">
+            <div class=" d-flex align-items-center left-third-sec">
                 <div class="switch-w ">
                     <label class="switch">
                         <input type="checkbox" checked>
                         <span class="slider round"></span>
                     </label>
                 </div>
-                <p class=" muted-black activated">مفعلة</p>
-                <button class="ticket-book-btn">حجز تذكرة جديدة</button>
+                <div><p class=" muted-black activated">مفعلة</p></div>
+                <div><button class="ticket-book-btn">حجز تذكرة جديدة</button></div>
             </div>
-        </div>
+        </section>
 
         <!-- ///////////////////////////////////////forth section/////////////////////////////// -->
-        <div class=" w-90 table-container">
+        <section class=" w-90 table-container">
             <table>
                 <thead>
                     <tr>
@@ -117,7 +129,7 @@
                         </td>
                         <td>C-101</td>
                         <td>$40</td>
-                        <td>سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+                        <td data-bs-toggle="tooltip" data-bs-placement="top" title="صيدناوي مول , برج العرب">سينما مصر , مول العرب , برج الأطنان , سرايا القبة
                             ...</td>
                         <td>1</td>
                         <td>مرة واحدة</td>
@@ -145,7 +157,7 @@
                         </td>
                         <td>C-102</td>
                         <td>$30</td>
-                        <td>سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+                        <td data-bs-toggle="tooltip" data-bs-placement="top" title="صيدناوي مول , برج العرب">سينما مصر , مول العرب , برج الأطنان , سرايا القبة
                             ...</td>
                         <td>1</td>
                         <td>مرة واحدة</td>
@@ -173,7 +185,7 @@
                         </td>
                         <td>C-103</td>
                         <td>$45</td>
-                        <td>سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+                        <td data-bs-toggle="tooltip" data-bs-placement="top" title="صيدناوي مول , برج العرب">سينما مصر , مول العرب , برج الأطنان , سرايا القبة
                             ...</td>
                         <td>1</td>
                         <td>مرة واحدة</td>
@@ -201,18 +213,18 @@
                         </td>
                         <td>C-103</td>
                         <td>$50</td>
-                        <td>سينما مصر , مول العرب , برج الأطنان , سرايا القبة
+                        <td data-bs-toggle="tooltip" data-bs-placement="top" title="صيدناوي مول , برج العرب">سينما مصر , مول العرب , برج الأطنان , سرايا القبة
                             ...</td>
                         <td>1</td>
                         <td>مرة واحدة</td>
                         <td>
                             <div class=" d-flex align-center justify-between">
-                                <div><img src="images/Frame 10.svg" alt=""></div>
+                                <div><img src="images/Frame 10.svg" class="last" alt=""></div>
                             <div class="test2">
                                 <p class="">تذكرة رقم 45.pdf</p>
                                 <p class="pdf muted-black">9mb .PDF</p>
                             </div>
-                            <div><img src="images/Group 1000010390.svg" alt=""></div>
+                            <div><img src="images/Group 1000010390.svg" class="last" alt=""></div>
                             </div>
                         </td>
                     </tr>
@@ -245,16 +257,15 @@
         </div>
           </div>
 
-        </div>
-            
+        </section>
         <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script>// Sample data for the chart
+        <script>
 
 const chartData = {
     series: [{
         name: 'Sales',
         data: [40, 80, 30, 50, 125, 110, 90, 100, 75, 80, 30, 110],
-        dataLabels: { // Disable data labels for this series
+        dataLabels: { 
             enabled: false
         }
     }],
@@ -262,8 +273,8 @@ const chartData = {
         type: 'area',
         height: 350,
         rtl: true,
-        toolbar: { show: false }, // Optionally, hide the toolbar if applicable
-        legend: { show: false } // Hide the legend
+        toolbar: { show: false },
+        legend: { show: false } 
     },
     xaxis: {
         categories: ['يناير', 'فبراير', 'مارس', 'أبريل', 'مايو', 'يونيو', 'يوليو', 'أغسطس', 'سبتمبر', 'أكتوبر', 'نوفمبر', 'ديسمبر'],
@@ -278,12 +289,13 @@ const chartData = {
     colors: ['#8a74f9']
 };
 
-// Render the chart
 const chart = new ApexCharts(document.querySelector('#chart'), chartData);
 chart.render();
 
 
 
     </script>
+            <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
     </body>
 </html>
