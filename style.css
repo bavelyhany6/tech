@@ -624,4 +624,6 @@ tbody tr:hover {
   .activated {
     margin-top: 10px;
   }
+  .lista{
+display: none;  }
 }
