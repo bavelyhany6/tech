@@ -360,6 +360,13 @@ tbody tr:hover {
     overflow: hidden;
     font-size: 13px;
   }
+  .name{
+    margin-right: 5px;
+  }
+  .test2{
+    margin-right: 5px;
+    margin-left: 5px;
+  }
 }
 @media screen and (max-width: 800px) {
   .linkDetailsTik {
